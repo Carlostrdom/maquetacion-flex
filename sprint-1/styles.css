@@ -1,0 +1,343 @@
+/* Reset default margins and paddings, apply box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.layout {
+    background-image: url('./image/strawberry.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    display: flex;
+
+  }
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: rgb(170, 123, 89);
+    height: 10vh;
+    width: 100%;
+    z-index: 1000;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.navbarA {
+    background-color: rgb(201, 195, 192);
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 0 10px;
+    border-radius: 20px;
+    border: 2px solid pink;
+}
+
+.navbarA:hover {
+    background-color: rgb(170, 123, 89);
+    color: white;
+}
+
+.nav-logo {
+    background-color: rgb(201, 195, 192);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid pink;
+    margin-left: 40px; 
+}
+
+main{
+    width: 100%;
+    gap: 20px;
+
+}
+section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        padding: 20px;
+    }
+    
+.sectionA {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    }
+
+.sectionA h1 {
+    background-color: aliceblue;
+
+}
+.sectionA p {
+    background-color: aliceblue;
+
+}
+
+.sectionA img {
+        height: 200px;
+        width: 200px;        
+        border-radius: 10px;
+    }
+
+
+.caption-wrapper {    
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.caption-wrapper img {
+  
+    height: 200px;
+    width: 200px;        
+    border-radius: 10px;
+}
+
+.caption-wrapper p {
+    background-color: rgb(170, 123, 89);
+    font-size: 1em;
+    color: white;
+    line-height: 1.5;
+    border-radius: 10px;
+
+}
+
+
+footer {
+    background-color: rgb(170, 123, 89);
+    height: 10vh;
+    width: 100%;    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+
+}
+
+
+/*Class the About*/
+
+
+.About-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: black;
+}
+  
+.caption-about {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+  
+.caption-about p {
+    justify-content: center;
+    margin: 0 10px;
+    display: flex;
+    width: calc(100% - 80px); /* Ajusta el ancho del párrafo según sea necesario */
+    border-radius: 40px;
+    border: 2px solid pink;
+    color: black;
+    background-color: rgb(170, 123, 89);
+}
+  
+.caption-about img {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border: 2px solid white;
+}  
+/*Class the contact*/
+
+.bodycontac {
+    background-image: url('./image/pochecrema.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    display: flex;
+    
+    
+  }
+
+.contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;}
+
+.contact img{
+        width: 350px;
+        height: 355px;
+        border: 6px solid white; 
+}
+
+
+.contact-container {
+    display: flex;
+    text-align: center; 
+    width: 100%;
+}
+
+.contact-info {
+    justify-content: center;
+    flex-direction: column;
+    
+    margin:0 300px;
+    font-size: 25px; 
+    color:white; 
+    text-align: center; 
+    -webkit-text-stroke: 0.5px black; 
+
+}
+
+
+/* more-information */
+
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.title {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.subtitle {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.tabla{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.styled-table {
+      
+    width:800px;
+    height: auto;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 18px;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+.styled-table thead tr {
+    background-color: #333;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+    border: 1px solid #dddddd;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #333;
+}
+
+.styled-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* benefits */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.container {
+    text-align: left;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.title2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: black;}
+.subtitle2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: black;
+}
+.main-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.main-list > li {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.sub-list {
+    list-style-type: circle;
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+.sub-list > li {
+    margin-bottom: 5px;
+    font-weight: normal;
+}
