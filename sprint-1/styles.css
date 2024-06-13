@@ -6,29 +6,31 @@
 }
 
 
+
+
+.header,
+.footer {
+    min-height: 10vh;
+    display: flex;    
+   
+}
+header{
+    height: 60px;
+    background-color: rgb(170, 123, 89);
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
 .layout {
     background-image: url('./image/strawberry.jpg');
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     flex-direction: column;
     display: flex;
 
   }
-
-header {
-    position: sticky;
-    top: 0;
-    background-color: rgb(170, 123, 89);
-    height: 10vh;
-    width: 100%;
-    z-index: 1000;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-}
-
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -69,7 +71,7 @@ header {
     margin-left: 40px; 
 }
 
-main{
+main{flex-grow: 1;
     width: 100%;
     gap: 20px;
 
@@ -132,16 +134,15 @@ section {
 
 }
 
-
+ 
 footer {
+
+    height: 60px;
     background-color: rgb(170, 123, 89);
-    height: 10vh;
-    width: 100%;    
+    justify-content: center;
     display: flex;
     align-items: center;
-    text-align: center;
     justify-content: center;
-
 
 }
 
@@ -187,9 +188,7 @@ footer {
 .bodycontac {
     background-image: url('./image/pochecrema.jpg');
     background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 100vh;
+    background-position: center;    
     flex-direction: column;
     display: flex;
     
@@ -233,8 +232,10 @@ footer {
 
 
 .container {
-    text-align: center;
-    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .title {
@@ -245,7 +246,6 @@ footer {
 
 .subtitle {
     font-size: 24px;
-    margin-bottom: 20px;
     color: black;
 }
 
@@ -253,12 +253,13 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 5px;
     
 }
 .styled-table {
       
-    width:800px;
-    height: auto;
+    width: 800px;
+    height: 200px;
     border-collapse: collapse;
     margin: 25px 0;
     font-size: 18px;
@@ -275,7 +276,6 @@ footer {
 
 .styled-table th,
 .styled-table td {
-    padding: 12px 15px;
     border: 1px solid #dddddd;
 }
 
@@ -297,29 +297,43 @@ footer {
 
 /* benefits */
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
-    background-color: #f5f5f5;
-}
 
-.container {
-    text-align: left;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.containerB {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 
 .title2 {
     font-size: 24px;
     margin-bottom: 10px;
     color: black;}
+
+
 .subtitle2 {
     font-size: 24px;
     margin-bottom: 20px;
     color: black;
+}
+
+.ajust{
+    width: 800px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f1f1f1;
+    gap: 10px;
+    border-radius: 20px
+
+}
+
+.igame1{
+    width:100px;
+    height: 100px;
 }
 .main-list {
     list-style-type: disc;
